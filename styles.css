@@ -56,10 +56,21 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
-    /* Soft Grey Gradient Background */
-    background: linear-gradient(to bottom, #F0F2F5, #DEE2E6);
+    position: relative;
     min-height: 100vh;
-    background-attachment: fixed;
+    background-color: transparent;
+    /* Ensure body itself is transparent */
+}
+
+/* GLOBAL RADIAL GRADIENT BACKGROUND */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(125% 125% at 50% 10%, #fff 40%, #475569 100%);
+    pointer-events: none;
+    /* Ensure clicks pass through */
 }
 
 /* Ensure gradient is visible through sections */
