@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- 
+        HERO BACKGROUND:
+        The hero section uses 'images/hero-bg-generated.jpg'.
+        Ensure this file exists in the images directory.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Meta Scientia - Transformando la ciencia en soluciones prácticas para México y el mundo. Biotecnología, investigación y capacitación especializada.">
+    <title>Meta Scientia | Biotecnología y Educación</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+
+
+</head>
+
+<body class="fondo-gradient">
+
+    <!-- HEADER / NAVIGATION -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo-container">
+                <img src="./images/logo.png" alt="Meta Scientia Logo" class="logo-img">
+                <span class="logo-text">MetaScientia</span>
+            </a>
+
+            <nav id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#hero" data-i18n="nav_home">Inicio</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Servicios</a></li>
+                    <li><a href="#projects" data-i18n="nav_projects">Proyectos</a></li>
+                    <li><a href="#courses" data-i18n="nav_courses">Cursos</a></li>
+                    <li><a href="#about" data-i18n="nav_about">Nosotros</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="lang-switcher" id="lang-switcher">
+                    <span id="lang-es" class="active">ES</span> | <span id="lang-en">EN</span>
+                </div>
+                <button id="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+
+        <div id="vanta-layer"></div> <!-- NUEVA CAPA -->
+
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text-block">
+                <h1 data-i18n="hero_title">Transformamos la ciencia en soluciones prácticas para México y el mundo</h1>
+                <p class="subtitle" data-i18n="hero_subtitle">Investigación aplicada, capacitación especializada y
+                    desarrollo biotecnológico para instituciones, investigadores y estudiantes.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/521XXXXXXXXXX" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i> <span data-i18n="hero_cta_chat">Chat vía WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FLOATING CARDS -->
+        <div class="hero-floating-cards">
+            <div class="container">
+                <div class="cards-wrapper">
+                    <div class="feature-card">
+                        <div class="icon-box"><i class="fas fa-flask"></i></div>
+                        <h3 data-i18n="card_biotech">I+D Biotecnológico</h3>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-box"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3 data-i18n="card_training">Capacitación Especializada</h3>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-box"><i class="fas fa-leaf"></i></div>
+                        <h3 data-i18n="card_sustainable">Soluciones Sustentables</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-padding about-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 data-i18n="about_title">Quiénes Somos</h2>
+                <p class="section-subtitle" data-i18n="about_subtitle">Cerrando la brecha entre el descubrimiento
+                    científico y la aplicación en el mundo real.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3 data-i18n="mission_title">Nuestra Misión y Visión</h3>
+                    <p data-i18n="mission_text">Meta Scientia se dedica a avanzar en la biotecnología y la educación
+                        científica. Empoderamos a investigadores, instituciones y estudiantes con herramientas y
+                        conocimientos de vanguardia para resolver desafíos urgentes en agricultura, salud y medio
+                        ambiente.</p>
+
+                    <div class="achievements-list">
+                        <div class="achievement-item">
+                            <i class="fas fa-book-open"></i>
+                            <span data-i18n="achieve_pubs">50+ Publicaciones</span>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-users"></i>
+                            <span data-i18n="achieve_students">1000+ Estudiantes Capacitados</span>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span data-i18n="achieve_projects">20+ Proyectos Activos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="founder-card">
+                        <img src="./images/amir.jpg" alt="Founder of Meta Scientia" class="founder-img">
+                        <div class="founder-info">
+                            <h4>Dr. Amir </h4>
+                            <p data-i18n="founder_role">Fundador y científico Principal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 data-i18n="services_title">Nuestros Servicios</h2>
+                <p class="section-subtitle" data-i18n="services_subtitle">Soluciones integrales para la comunidad
+                    científica.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-seedling"></i></div>
+                    <h3 data-i18n="service_1_title">Plant Tissue Culture</h3>
+                    <p data-i18n="service_1_desc">Cultivo de tejidos y protocolos de mejoramiento genético para la
+                        resiliencia agrícola.</p>
+                    <a href="plant-tissue-culture.html" class="btn-link"><span data-i18n="learn_more">Aprender
+                            Más</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-fungus"></i></div>
+                    <h3 data-i18n="service_2_title">Mushroom Production</h3>
+                    <p data-i18n="service_2_desc">Capacitación y consultoría para el cultivo industrial y artesanal de
+                        hongos.</p>
+                    <a href="mushroom-production.html" class="btn-link"><span data-i18n="learn_more">Aprender Más</span>
+                        <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mortar-pestle"></i></div>
+                    <h3 data-i18n="service_3_title">web Development</h3>
+                    <p data-i18n="service_3_desc">Desarrollo y estandarización de productos fitofarmacéuticos.</p>
+                    <a href="web-development.html" class="btn-link"><span data-i18n="learn_more">Aprender Más</span> <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-dna"></i></div>
+                    <h3 data-i18n="service_4_title">Bioinformatics</h3>
+                    <p data-i18n="service_4_desc">Análisis de datos y descubrimiento de fármacos utilizando biología
+                        computacional.</p>
+                    <a href="bioinformatics.html" class="btn-link"><span data-i18n="learn_more">Aprender Más</span> <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+                    <h3 data-i18n="service_5_title">Scientific Writing / Research Publications</h3>
+                    <p data-i18n="service_5_desc">Asistencia en la preparación de manuscritos, edición y estrategia de
+                        publicación.</p>
+                    <a href="scientific-writing.html" class="btn-link"><span data-i18n="learn_more">Aprender Más</span>
+                        <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3 data-i18n="service_6_title">International Programs</h3>
+                    <p data-i18n="service_6_desc">Fomento de la colaboración global y programas de intercambio para
+                        investigadores.</p>
+                    <a href="international-programs.html" class="btn-link"><span data-i18n="learn_more">Aprender
+                            Más</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS & RESEARCH SECTION -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 data-i18n="projects_title">Proyectos e Investigación</h2>
+                <p class="section-subtitle" data-i18n="projects_subtitle">Explorando las fronteras de la ciencia.</p>
+            </div>
+
+            <div class="projects-slider-container">
+                <div class="slider-wrapper" id="projects-slider">
+                    <div class="slide active">
+                        <img src="https://placehold.co/800x450/2A5CAA/FFFFFF?text=Laboratory+Research"
+                            alt="Lab Research">
+                        <div class="slide-caption">
+                            <h3 data-i18n="slide_1_title">Análisis Genético Avanzado</h3>
+                            <p data-i18n="slide_1_desc">Mapeo de genomas para cultivos resistentes a la sequía.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://placehold.co/800x450/4CAF50/FFFFFF?text=Field+Work" alt="Field Work">
+                        <div class="slide-caption">
+                            <h3 data-i18n="slide_2_title">Agricultura Sustentable</h3>
+                            <p data-i18n="slide_2_desc">Implementación de biofertilizantes en comunidades rurales.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://placehold.co/800x450/2A5CAA/FFFFFF?text=Conferences" alt="Conferences">
+                        <div class="slide-caption">
+                            <h3 data-i18n="slide_3_title">Colaboración Internacional</h3>
+                            <p data-i18n="slide_3_desc">Presentación de hallazgos en cumbres globales de biotecnología.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev-btn" aria-label="Previous Slide"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next-btn" aria-label="Next Slide"><i
+                        class="fas fa-chevron-right"></i></button>
+                <div class="slider-indicators">
+                    <!-- Indicators generated by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section id="courses" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 data-i18n="courses_title">Cursos y Talleres</h2>
+                <p class="section-subtitle" data-i18n="courses_subtitle">Empoderando a la próxima generación de
+                    científicos.</p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-header">
+                        <span class="badge" data-i18n="course_1_badge">En Línea</span>
+                        <h4 data-i18n="course_1_title">PCR y Biología Molecular</h4>
+                    </div>
+                    <div class="course-body">
+                        <p><strong data-i18n="duration_label_1">Duración:</strong> <span data-i18n="duration_label_11">4
+                                Semanas</span></p>
+                        <p data-i18n="course_1_desc">Domina los fundamentos de la Reacción en Cadena de la Polimerasa.
+                        </p>
+                        <button class="btn btn-primary btn-block" data-i18n="enroll_btn">Inscribirse Ahora</button>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-header">
+                        <span class="badge" data-i18n="course_2_badge">Híbrido</span>
+                        <h4 data-i18n="course_2_title">Masterclass de Redacción Científica</h4>
+                    </div>
+                    <div class="course-body">
+                        <p><strong data-i18n="duration_label_2">Duración:</strong> <span data-i18n="duration_label_21">
+                                2
+                                semanas </span></p>
+                        <p data-i18n="course_2_desc">Aprende a escribir artículos de investigación de alto impacto.</p>
+                        <button class="btn btn-primary btn-block" data-i18n="enroll_btn">Inscribirse Ahora</button>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-header">
+                        <span class="badge" data-i18n="course_3_badge">Presencial</span>
+                        <h4 data-i18n="course_3_title">Cultivo de Hongos</h4>
+                    </div>
+                    <div class="course-body">
+                        <p><strong data-i18n="duration_label_3">Duración:</strong> <span data-i18n="duration_label_31">
+                                3
+                                días </span></p>
+                        <p data-i18n="course_3_desc">Taller práctico para el cultivo de hongos comestibles.</p>
+                        <button class="btn btn-primary btn-block" data-i18n="enroll_btn">Inscribirse Ahora</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Mini Slider -->
+            <div class="testimonials-container">
+                <h3 data-i18n="testimonials_title">Lo Que Dicen Nuestros Estudiantes</h3>
+                <div class="testimonial-slider" id="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <p data-i18n="testimonial_1">"El curso de PCR cambió el juego para mi trabajo de tesis. ¡Muy
+                            recomendado!"</p>
+                        <cite data-i18n="testimonial_1_cite">- Maria G., Estudiante de PhD</cite>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p data-i18n="testimonial_2">"Excelentes instructores y material práctico. Publiqué mi primer
+                            artículo gracias a su guía."</p>
+                        <cite data-i18n="testimonial_2_cite">- Carlos R., Investigador</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 data-i18n="contact_title">Ponte en Contacto</h2>
+                <p class="section-subtitle" data-i18n="contact_subtitle">Colaboremos en tu próximo proyecto.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <div class="contact-info">
+                        <h3 data-i18n="quick_access_text">Contáctanos directamente:</h3>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <p class="contact-label">Teléfono</p>
+                                    <a href="tel:+521XXXXXXXXXX" class="contact-value">+521 XXXXXXXXXX</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <p class="contact-label">Correo Electrónico</p>
+                                    <a href="mailto:info@metascientia.com"
+                                        class="contact-value">info@metascientia.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <p class="contact-label">WhatsApp</p>
+                                    <a href="https://wa.me/521XXXXXXXXXX" class="contact-value" target="_blank">Chat vía
+                                        WhatsApp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <!-- Placeholder Map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.539586647376!2d-99.16869368509334!3d19.43260768688426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8c9c0c0c0c1%3A0x0!2zMTnCsDI1JzU3LjQiTiA5OcKwMTAnMDAuNCJX!5e0!3m2!1sen!2smx!4v1620000000000!5m2!1sen!2smx"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>MetaScientia</h3>
+                <p data-i18n="footer_slogan">Transformando la ciencia en soluciones.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_quicklinks">Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#hero" data-i18n="nav_home">Inicio</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Servicios</a></li>
+                    <li><a href="#courses" data-i18n="nav_courses">Cursos</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_legal">Legal</h4>
+                <ul>
+                    <li><a href="#" data-i18n="footer_privacy">Política de Privacidad</a></li>
+                    <li><a href="#" data-i18n="footer_terms">Términos de Servicio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_newsletter">Boletín</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo" data-i18n="placeholder_email">
+                    <button type="submit" class="btn btn-sm btn-primary" data-i18n="btn_subscribe">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p data-i18n="footer_copyright">&copy; 2023 Meta Scientia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+    <script>
+        VANTA.CELLS({
+            el: "#vanta-layer",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+
+            /* 🔥 COLORES OSCUROS PARA MEJOR CONTRASTE 🔥 */
+            color1: 0x143058,  // Azul muy oscuro
+            color2: 0x1f4d2c,  // Verde muy oscuro
+
+            size: 1.50,
+            speed: 1.00
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
