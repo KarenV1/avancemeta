@@ -31,6 +31,12 @@
 </head>
 
 <body class="fondo-gradient">
+    <script>
+        if (localStorage.getItem("auth") !== "true") {
+            window.location.href = "login.html";
+        }
+    </script>
+
 
     <!-- HEADER / NAVIGATION -->
     <header id="main-header">
@@ -448,6 +454,7 @@
     </script>
 
     <script src="script.js"></script>
+
 
 
 

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 350px;
+            width: 100%;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            background: #008f39;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+        <h2>Acceso restringido</h2>
+        <input id="passwordInput" type="password" placeholder="Contraseña">
+        <button onclick="login()">Entrar</button>
+        <p id="error" style="color:red; display:none;">Contraseña incorrecta</p>
+    </div>
+
+    <script>
+        const PASSWORD = "MetaCientia2025"; // <-- CAMBIA ESTA CONTRASEÑA
+
+        function login() {
+            const input = document.getElementById("passwordInput").value;
+
+            if (input === PASSWORD) {
+                localStorage.setItem("auth", "true");
+                window.location.href = "index.html"; // Página principal de tu sitio
+            } else {
+                document.getElementById("error").style.display = "block";
+            }
+        }
+
+        if (localStorage.getItem("auth") === "true") {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+
+</html>
