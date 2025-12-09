@@ -137,7 +137,8 @@ ul {
     margin: 0 auto;
 }
 
-.service-icon-large i {
+.service-icon-large i,
+.service-icon-large .icon-mask {
     font-size: 4rem;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 1.5rem;

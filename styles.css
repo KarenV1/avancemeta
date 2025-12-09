@@ -12,7 +12,7 @@
 
 :root {
     /* Palette Mapping */
-    --primary-dark: #12251c;
+    --primary-dark: #193b2e;
     --primary-medium: #4A5D68;
     --primary-teal: #294E52;
     --primary-light: #6F7B87;
@@ -68,7 +68,7 @@ body::before {
     position: fixed;
     inset: 0;
     z-index: -1;
-    background: radial-gradient(125% 125% at 50% 10%, #fff 40%, #475569 100%);
+    background: radial-gradient(125% 125% at 50% 10%, #d0d3d4 40%, #575c64 100%);
     pointer-events: none;
     /* Ensure clicks pass through */
 }
@@ -529,6 +529,12 @@ img {
     margin-bottom: 20px;
 }
 
+.service-icon img {
+    height: 1em;
+    width: auto;
+    vertical-align: middle;
+}
+
 .service-card h3 {
     font-size: 1.3rem;
     margin-bottom: 15px;
@@ -617,6 +623,9 @@ img {
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .course-card:hover {
@@ -627,8 +636,22 @@ img {
 .course-header {
     background: var(--primary-teal);
     color: var(--white);
-    padding: 20px;
+    padding: 30px 20px;
     position: relative;
+    flex: 0 0 auto;
+    min-height: px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.course-header h4 {
+    color: var(--white);
+    margin: 0;
+    width: 100%;
+    font-size: .9rem;
+    line-height: 1.4;
 }
 
 .badge {
@@ -795,6 +818,26 @@ img {
 
 .contact-item div {
     text-align: left;
+}
+
+/* MASKED ICONS UTILITIES */
+.icon-mask {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.icon-mushroom {
+    -webkit-mask-image: url('./images/mushroom.png');
+    mask-image: url('./images/mushroom.png');
 }
 
 .contact-label {
