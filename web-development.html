@@ -5,26 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Web Development - Meta Scientia. Desarrollo y estandarización de productos fitofarmacéuticos.">
+        content="Web Development - Meta Scientia. Soluciones digitales responsivas y escalables para su negocio.">
     <title>Web Development | Meta Scientia</title>
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
-
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="international.css">
 </head>
 
 <body>
-
     <!-- HEADER / NAVIGATION -->
     <header id="main-header">
         <div class="container header-container">
@@ -32,18 +28,16 @@
                 <img src="./images/logo.png" alt="Meta Scientia Logo" class="logo-img">
                 <span class="logo-text">MetaScientia</span>
             </a>
-
             <nav id="main-nav">
                 <ul class="nav-links">
-                    <li><a href="index.html#hero">Inicio</a></li>
-                    <li><a href="index.html#services">Servicios</a></li>
-                    <li><a href="index.html#projects">Proyectos</a></li>
-                    <li><a href="index.html#courses">Cursos</a></li>
-                    <li><a href="index.html#about">Nosotros</a></li>
-                    <li><a href="index.html#contact">Contacto</a></li>
+                    <li><a href="index.html#hero" data-i18n="nav_home">Inicio</a></li>
+                    <li><a href="index.html#services" data-i18n="nav_services">Servicios</a></li>
+                    <li><a href="index.html#projects" data-i18n="nav_projects">Proyectos</a></li>
+                    <li><a href="index.html#courses" data-i18n="nav_courses">Cursos</a></li>
+                    <li><a href="index.html#about" data-i18n="nav_about">Nosotros</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav_contact">Contacto</a></li>
                 </ul>
             </nav>
-
             <div class="header-actions">
                 <div class="lang-switcher" id="lang-switcher">
                     <span id="lang-es" class="active">ES</span> | <span id="lang-en">EN</span>
@@ -54,125 +48,111 @@
             </div>
         </div>
     </header>
-
     <!-- SERVICE HERO SECTION -->
     <section class="service-hero">
         <div class="container">
             <div class="service-hero-content">
                 <div class="service-icon-large">
-                    <i class="fas fa-mortar-pestle"></i>
+                    <i class="fas fa-laptop-code"></i>
                 </div>
-                <h1>Web Development</h1>
-                <p class="service-tagline">Desarrollo y estandarización de productos fitofarmacéuticos.</p>
+                <h1 data-i18n="web_title">Web Development</h1>
+                <p class="service-tagline" data-i18n="web_tagline">Soluciones digitales responsivas y escalables para su
+                    negocio.</p>
             </div>
         </div>
     </section>
-
     <!-- SERVICE DETAILS SECTION -->
     <section class="section-padding service-details">
         <div class="container">
             <div class="service-content-grid">
                 <div class="service-main-content">
-                    <h2>Sobre este servicio</h2>
-                    <p>El desarrollo de productos fitofarmacéuticos requiere conocimientos especializados en química,
-                        biología y regulación. Ofrecemos servicios integrales para la formulación, prueba y
-                        estandarización de productos agrícolas innovadores.</p>
+                    <h2 data-i18n="web_about_title">Sobre este servicio</h2>
+                    <p data-i18n="web_about_text">En Meta Scientia, creamos experiencias digitales excepcionales.
+                        Nuestro equipo de desarrollo web se especializa en construir sitios web y aplicaciones modernas,
+                        responsivas y escalables que impulsan el crecimiento de su negocio y fortalecen su presencia en
+                        línea.</p>
 
-                    <h3>¿Qué ofrecemos?</h3>
+                    <h3 data-i18n="web_offer_title">¿Qué ofrecemos?</h3>
                     <ul class="service-features-list">
                         <li class="feature-item">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Desarrollo de formulaciones fitofarmacéuticas</span>
+                                <span data-i18n="web_feat_1">Diseño Responsivo y Moderno</span>
                             </div>
-                            <div class="feature-content"></div>
+                            <div class="feature-content">
+                                <p data-i18n="web_feat_1_desc">Sitios web que se ven y funcionan perfectamente en todos
+                                    los dispositivos, desde móviles hasta escritorio.</p>
+                            </div>
                         </li>
                         <li class="feature-item">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Pruebas de eficacia y seguridad</span>
+                                <span data-i18n="web_feat_2">Desarrollo Escalable</span>
                             </div>
-                            <div class="feature-content"></div>
+                            <div class="feature-content">
+                                <p data-i18n="web_feat_2_desc">Arquitecturas robustas diseñadas para crecer con su
+                                    negocio, utilizando las últimas tecnologías.</p>
+                            </div>
                         </li>
                         <li class="feature-item">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Estandarización de procesos de producción</span>
+                                <span data-i18n="web_feat_3">Optimización SEO</span>
                             </div>
-                            <div class="feature-content"></div>
+                            <div class="feature-content">
+                                <p data-i18n="web_feat_3_desc">Mejoramos su visibilidad en los motores de búsqueda para
+                                    atraer más tráfico orgánico.</p>
+                            </div>
                         </li>
                         <li class="feature-item">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Asesoría en registro y normatividad</span>
+                                <span data-i18n="web_feat_4">Soluciones Personalizadas</span>
                             </div>
-                            <div class="feature-content"></div>
+                            <div class="feature-content">
+                                <p data-i18n="web_feat_4_desc">Desarrollo a medida para satisfacer las necesidades
+                                    específicas de su proyecto o empresa.</p>
+                            </div>
                         </li>
                         <li class="feature-item">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Control de calidad y certificación</span>
+                                <span data-i18n="web_feat_5">Comercio Electrónico</span>
                             </div>
-                            <div class="feature-content"></div>
+                            <div class="feature-content">
+                                <p data-i18n="web_feat_5_desc">Tiendas en línea seguras y fáciles de administrar para
+                                    vender sus productos al mundo.</p>
+                            </div>
                         </li>
                     </ul>
 
-                    <h3>Beneficios</h3>
-                    <p>Nuestros servicios ayudan a empresas agrícolas y emprendedores a desarrollar productos
-                        fitofarmacéuticos efectivos, seguros y competitivos que cumplan con las normativas nacionales e
-                        internacionales.</p>
+                    <h3 data-i18n="web_benefits_title">Beneficios</h3>
+                    <p data-i18n="web_benefits_text">Transformamos sus ideas en realidad digital. Un sitio web
+                        profesional no solo mejora su imagen de marca, sino que también es una herramienta poderosa para
+                        la adquisición y retención de clientes.</p>
 
-                    <div class="intl-carousel-3d">
-                        <div class="intl-carousel-track">
-                            <div class="intl-carousel-item"><img
-                                    src="./images/cayos/WhatsApp Image 2025-11-30 at 5.49.17 PM (3).jpeg"
-                                    alt="Carousel Image 1">
-                            </div>
-                            <div class="intl-carousel-item"><img
-                                    src="./images/cayos/WhatsApp Image 2025-11-30 at 5.49.17 PM (3).jpeg"
-                                    alt="Carousel Image 2">
-                            </div>
-                            <div class="intl-carousel-item"><img
-                                    src="./images/cayos/WhatsApp Image 2025-11-30 at 5.49.17 PM (2).jpeg"
-                                    alt="Carousel Image 3">
-                            </div>
-                            <div class="intl-carousel-item"><img
-                                    src="./images/cayos/WhatsApp Image 2025-11-30 at 5.49.16 PM.jpeg"
-                                    alt="Carousel Image 4">
-                            </div>
-                            <div class="intl-carousel-item"><img
-                                    src="./images/cayos/WhatsApp Image 2025-11-30 at 5.49.16 PM (7).jpeg"
-                                    alt="Carousel Image 5">
-                            </div>
-                            <div class="intl-carousel-item"><img
-                                    src="./images/cayos/WhatsApp Image 2025-11-30 at 5.49.16 PM (6).jpeg"
-                                    alt="Carousel Image 6">
-                            </div>
-                            <div class="intl-carousel-item"><img
-                                    src="./images/cayos/WhatsApp Image 2025-11-30 at 5.49.16 PM (4).jpeg"
-                                    alt="Carousel Image 7">
-                            </div>
-                            <div class="intl-carousel-item"><img
-                                    src="./images/cayos/WhatsApp Image 2025-11-30 at 5.49.16 PM (3).jpeg"
-                                    alt="Carousel Image 8">
-                            </div>
-                        </div>
+                    <div class="portfolio-cta text-center" style="margin-top: 40px;">
+                        <h3 data-i18n="web_portfolio_title">Vea Nuestro Trabajo</h3>
+                        <p data-i18n="web_portfolio_desc">Explore nuestro portafolio para ver ejemplos de proyectos
+                            exitosos.</p>
+                        <a href="#" class="btn btn-primary" data-i18n="web_portfolio_btn">Ver Portafolio</a>
                     </div>
-                    <script src="intl-carousel.js"></script>
                 </div>
 
                 <aside class="service-sidebar">
                     <div class="service-cta-box">
-                        <h3>¿Interesado en este servicio?</h3>
-                        <p>Contáctanos para más información y cotizaciones personalizadas.</p>
-                        <a href="index.html#contact" class="btn btn-primary btn-block">Contactar</a>
+                        <h3 data-i18n="sidebar_interested_title">¿Interesado en este servicio?</h3>
+                        <p data-i18n="sidebar_interested_text">Contáctanos para más información y cotizaciones
+                            personalizadas.</p>
+                        <a href="index.html#contact" class="btn btn-primary btn-block"
+                            data-i18n="sidebar_contact_btn">Contactar</a>
                         <a href="https://wa.me/521XXXXXXXXXX" target="_blank" class="btn btn-outline-dark btn-block">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
+                            <i class="fab fa-whatsapp"></i> <span data-i18n="hero_cta_chat">WhatsApp</span>
                         </a>
                     </div>
 
                     <div class="related-services">
-                        <h4>Servicios Relacionados</h4>
+                        <h4 data-i18n="sidebar_related_title">Servicios Relacionados</h4>
                         <ul>
                             <li><a href="plant-tissue-culture.html">Plant Tissue Culture</a></li>
                             <li><a href="mushroom-production.html">Mushroom Production</a></li>
@@ -198,10 +178,10 @@
             <div class="footer-col">
                 <h4>Enlaces Rápidos</h4>
                 <ul>
-                    <li><a href="index.html#hero">Inicio</a></li>
-                    <li><a href="index.html#services">Servicios</a></li>
-                    <li><a href="index.html#courses">Cursos</a></li>
-                    <li><a href="index.html#contact">Contacto</a></li>
+                    <li><a href="index.html#hero" data-i18n="nav_home">Inicio</a></li>
+                    <li><a href="index.html#services" data-i18n="nav_services">Servicios</a></li>
+                    <li><a href="index.html#courses" data-i18n="nav_courses">Cursos</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav_contact">Contacto</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -226,7 +206,6 @@
 
     <!-- SCRIPTS -->
     <script src="script.js"></script>
-
 </body>
 
 </html>
