@@ -18,6 +18,7 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="international.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
 
 <body>
@@ -51,7 +52,7 @@
     <!-- SERVICE HERO SECTION -->
     <section class="service-hero">
         <div class="container">
-            <div class="service-hero-content">
+            <div class="service-hero-content animate-fade-in">
                 <div class="service-icon-large">
                     <i class="fas fa-laptop-code"></i>
                 </div>
@@ -65,16 +66,16 @@
     <section class="section-padding service-details">
         <div class="container">
             <div class="service-content-grid">
-                <div class="service-main-content">
+                <div class="service-main-content reveal animate-slide-up">
                     <h2 data-i18n="web_about_title">Sobre este servicio</h2>
-                    <p data-i18n="web_about_text">En Meta Scientia, creamos experiencias digitales excepcionales.
+                    <p data-i18n="web_about_text">Creamos experiencias digitales excepcionales.
                         Nuestro equipo de desarrollo web se especializa en construir sitios web y aplicaciones modernas,
                         responsivas y escalables que impulsan el crecimiento de su negocio y fortalecen su presencia en
                         línea.</p>
 
                     <h3 data-i18n="web_offer_title">¿Qué ofrecemos?</h3>
                     <ul class="service-features-list">
-                        <li class="feature-item">
+                        <li class="feature-item reveal animate-slide-up reveal-delay-1">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
                                 <span data-i18n="web_feat_1">Diseño Responsivo y Moderno</span>
@@ -84,7 +85,7 @@
                                     los dispositivos, desde móviles hasta escritorio.</p>
                             </div>
                         </li>
-                        <li class="feature-item">
+                        <li class="feature-item reveal animate-slide-up reveal-delay-2">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
                                 <span data-i18n="web_feat_2">Desarrollo Escalable</span>
@@ -94,17 +95,9 @@
                                     negocio, utilizando las últimas tecnologías.</p>
                             </div>
                         </li>
-                        <li class="feature-item">
-                            <div class="feature-header">
-                                <i class="fas fa-check-circle"></i>
-                                <span data-i18n="web_feat_3">Optimización SEO</span>
-                            </div>
-                            <div class="feature-content">
-                                <p data-i18n="web_feat_3_desc">Mejoramos su visibilidad en los motores de búsqueda para
-                                    atraer más tráfico orgánico.</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
+
+
+                        <li class="feature-item reveal animate-slide-up reveal-delay-4">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
                                 <span data-i18n="web_feat_4">Soluciones Personalizadas</span>
@@ -114,7 +107,7 @@
                                     específicas de su proyecto o empresa.</p>
                             </div>
                         </li>
-                        <li class="feature-item">
+                        <li class="feature-item reveal animate-slide-up reveal-delay-1">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
                                 <span data-i18n="web_feat_5">Comercio Electrónico</span>
@@ -131,7 +124,7 @@
                         profesional no solo mejora su imagen de marca, sino que también es una herramienta poderosa para
                         la adquisición y retención de clientes.</p>
 
-                    <div class="portfolio-cta text-center" style="margin-top: 40px;">
+                    <div class="portfolio-cta text-center reveal animate-slide-up" style="margin-top: 40px;">
                         <h3 data-i18n="web_portfolio_title">Vea Nuestro Trabajo</h3>
                         <p data-i18n="web_portfolio_desc">Explore nuestro portafolio para ver ejemplos de proyectos
                             exitosos.</p>
@@ -139,7 +132,7 @@
                     </div>
                 </div>
 
-                <aside class="service-sidebar">
+                <aside class="service-sidebar reveal animate-slide-up">
                     <div class="service-cta-box">
                         <h3 data-i18n="sidebar_interested_title">¿Interesado en este servicio?</h3>
                         <p data-i18n="sidebar_interested_text">Contáctanos para más información y cotizaciones
@@ -205,6 +198,7 @@
     </footer>
 
     <!-- SCRIPTS -->
+    <script src="animations.js"></script>
     <script src="script.js"></script>
 </body>
 

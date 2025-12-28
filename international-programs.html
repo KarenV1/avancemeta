@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="international.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
 
 <body>
@@ -53,7 +54,7 @@
     <!-- SERVICE HERO SECTION -->
     <section class="service-hero">
         <div class="container">
-            <div class="service-hero-content">
+            <div class="service-hero-content animate-fade-in">
                 <div class="service-icon-large">
                     <i class="fas fa-globe-americas"></i>
                 </div>
@@ -68,7 +69,7 @@
     <section class="section-padding service-details">
         <div class="container">
             <div class="service-content-grid">
-                <div class="service-main-content">
+                <div class="service-main-content reveal animate-slide-up">
                     <h2 data-i18n="intl_about_title">Sobre este servicio</h2>
                     <p data-i18n="intl_about_text">En Meta Scientia, nos comprometemos no solo a impulsar la
                         investigación científica y la innovación, sino también a apoyar a la próxima generación de
@@ -79,7 +80,7 @@
 
                     <h3 data-i18n="intl_offer_title">¿Qué ofrecemos?</h3>
                     <ul class="service-features-list">
-                        <li class="feature-item">
+                        <li class="feature-item reveal animate-slide-up reveal-delay-1">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
                                 <span data-i18n="intl_feat_1_title">Orientación Personalizada para Estudios en el
@@ -98,7 +99,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="feature-item">
+                        <li class="feature-item reveal animate-slide-up reveal-delay-2">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
                                 <span data-i18n="intl_feat_2_title">Capacitación para Solicitud de Becas</span>
@@ -114,7 +115,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="feature-item">
+                        <li class="feature-item reveal animate-slide-up reveal-delay-3">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
                                 <span data-i18n="intl_feat_3_title">Apoyo en Documentación de Admisión</span>
@@ -130,7 +131,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="feature-item">
+                        <li class="feature-item reveal animate-slide-up reveal-delay-1">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
                                 <span data-i18n="intl_feat_4_title">Desarrollo de Perfil de Investigación</span>
@@ -226,7 +227,7 @@
                 </div>
 
                 <!-- SIDEBAR -->
-                <aside class="service-sidebar">
+                <aside class="service-sidebar reveal animate-slide-up">
                     <div class="service-cta-box">
                         <h3 data-i18n="sidebar_interested_title">¿Interesado en este servicio?</h3>
                         <p data-i18n="sidebar_interested_text">Contáctanos para más información y cotizaciones
@@ -292,6 +293,7 @@
     </footer>
 
     <!-- SCRIPTS -->
+    <script src="animations.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -1,0 +1,107 @@
+/* 
+   Meta Scientia - Animation System
+   Focus: Performance, Maintainability, and Smoothness
+*/
+
+:root {
+    /* Animation Timing & Curves */
+    --anim-duration-base: 0.8s;
+    --anim-duration-slow: 1.2s;
+    --anim-duration-fast: 0.4s;
+
+    /* Cubic Bezier: More pronounced and snappy */
+    --anim-easing-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* Increased Offsets for HIGH visibility */
+    --anim-slide-offset: 80px;
+    --anim-scale-start: 0.95;
+}
+
+/* Base reveal state - hidden before animation */
+.reveal {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--anim-duration-base) var(--anim-easing-smooth),
+        transform var(--anim-duration-base) var(--anim-easing-smooth),
+        filter var(--anim-duration-base) var(--anim-easing-smooth);
+    will-change: opacity, transform, filter;
+    filter: blur(5px);
+}
+
+/* Active state triggered by JS */
+.reveal.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0) scale(1) !important;
+    filter: blur(0);
+}
+
+/* --- ANIMATION KEYFRAMES --- */
+
+/* SlideInUp Pattern */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(var(--anim-slide-offset)) scale(var(--anim-scale-start));
+        filter: blur(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+/* FadeIn Pattern */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* --- UTILITY CLASSES --- */
+
+/* Slide In Up utility */
+.animate-slide-up {
+    transform: translateY(var(--anim-slide-offset)) scale(var(--anim-scale-start));
+}
+
+/* Fade In utility */
+.animate-fade-in {
+    animation: fadeIn var(--anim-duration-slow) var(--anim-easing-smooth) forwards;
+}
+
+/* Batch animation delays for lists or grids */
+.reveal-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+    transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+    transition-delay: 0.4s;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+
+    .reveal,
+    .animate-fade-in {
+        transition: none !important;
+        animation: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+    }
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceso</title>
+    <link rel="stylesheet" href="animations.css">
     <style>
         body {
             font-family: Arial;
@@ -48,12 +49,14 @@
 
 <body>
 
-    <div class="login-box">
+    <div class="login-box animate-fade-in">
         <h2>Acceso restringido</h2>
         <input id="passwordInput" type="password" placeholder="Contraseña">
         <button onclick="login()">Entrar</button>
         <p id="error" style="color:red; display:none;">Contraseña incorrecta</p>
     </div>
+
+    <script src="animations.js"></script>
 
     <script>
         const PASSWORD = "MetaCientia2025"; // <-- CAMBIA ESTA CONTRASEÑA

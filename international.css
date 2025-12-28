@@ -611,7 +611,7 @@ ul {
 .intl-carousel-3d {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 450px;
     /* Adjust height as needed */
     margin: 60px 0;
     perspective: 1000px;
@@ -633,25 +633,27 @@ ul {
 .intl-carousel-item {
     position: absolute;
     width: 300px;
-    /* Base width */
-    height: auto;
+    height: 400px;
+    /* Fixed height for uniformity */
     transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     background: #fff;
-    /* Fallback */
     overflow: hidden;
-    /* Center alignment by default */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
+    /* Default hidden */
+    opacity: 0;
+    z-index: 0;
 }
 
 .intl-carousel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* Ensures image fills card without distortion */
     display: block;
     border-radius: 16px;
 }
@@ -660,7 +662,7 @@ ul {
 
 /* Center (Active) */
 .intl-carousel-item.position-0 {
-    transform: translate(-50%, -50%) scale(1.3);
+    transform: translate(-50%, -50%) scale(1.1);
     z-index: 10;
     opacity: 1;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
@@ -668,52 +670,52 @@ ul {
 
 /* Right 1 */
 .intl-carousel-item.position-1 {
-    transform: translate(calc(-50% + 220px), -50%) scale(0.9);
+    transform: translate(calc(-50% + 240px), -50%) scale(0.9);
     z-index: 8;
     opacity: 1;
 }
 
 /* Right 2 */
 .intl-carousel-item.position-2 {
-    transform: translate(calc(-50% + 380px), -50%) scale(0.7);
+    transform: translate(calc(-50% + 400px), -50%) scale(0.7);
     z-index: 6;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
-/* Right 3 */
+/* Right 3 (Fading out) */
 .intl-carousel-item.position-3 {
-    transform: translate(calc(-50% + 500px), -50%) scale(0.5);
+    transform: translate(calc(-50% + 520px), -50%) scale(0.5);
     z-index: 4;
     opacity: 0;
-    /* Fade out */
 }
 
 /* Left 1 */
 .intl-carousel-item.position-7 {
-    transform: translate(calc(-50% - 220px), -50%) scale(0.9);
+    transform: translate(calc(-50% - 240px), -50%) scale(0.9);
     z-index: 8;
     opacity: 1;
 }
 
 /* Left 2 */
 .intl-carousel-item.position-6 {
-    transform: translate(calc(-50% - 380px), -50%) scale(0.7);
+    transform: translate(calc(-50% - 400px), -50%) scale(0.7);
     z-index: 6;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
-/* Left 3 */
+/* Left 3 (Fading out) */
 .intl-carousel-item.position-5 {
-    transform: translate(calc(-50% - 500px), -50%) scale(0.5);
+    transform: translate(calc(-50% - 520px), -50%) scale(0.5);
     z-index: 4;
     opacity: 0;
 }
 
-/* Hidden (Back) */
-.intl-carousel-item.position-4 {
+/* Explicitly Hidden */
+.intl-carousel-item.position-hidden {
     transform: translate(-50%, -50%) scale(0);
     z-index: 0;
     opacity: 0;
+    pointer-events: none;
 }
 
 /* Responsive Adjustments */
@@ -770,5 +772,51 @@ ul {
     .intl-carousel-item.position-6 {
         transform: translate(calc(-50% - 190px), -50%) scale(0.65);
         opacity: 0;
+    }
+}@media (max-width: 600px) {
+    .intl-carousel-3d {
+        height: 380px;
+    }
+
+    .intl-carousel-item {
+        width: 240px;
+        height: 320px;
+    }
+
+    /* Active Center */
+    .intl-carousel-item.position-0 {
+        transform: translate(-50%, -50%) scale(1);
+        z-index: 10;
+        opacity: 1;
+    }
+
+    /* Right 1 - Tucked behind */
+    .intl-carousel-item.position-1 {
+        transform: translate(calc(-50% + 60px), -50%) scale(0.85);
+        z-index: 8;
+        opacity: 0.8;
+    }
+
+    /* Right 2 - Hidden on mobile */
+    .intl-carousel-item.position-2 {
+        transform: translate(calc(-50% + 120px), -50%) scale(0.7);
+        z-index: 6;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Left 1 - Tucked behind */
+    .intl-carousel-item.position-7 {
+        transform: translate(calc(-50% - 60px), -50%) scale(0.85);
+        z-index: 8;
+        opacity: 0.8;
+    }
+
+    /* Left 2 - Hidden on mobile */
+    .intl-carousel-item.position-6 {
+        transform: translate(calc(-50% - 120px), -50%) scale(0.7);
+        z-index: 6;
+        opacity: 0;
+        pointer-events: none;
     }
 }

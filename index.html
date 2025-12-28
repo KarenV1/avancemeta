@@ -25,6 +25,7 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
 
 
 
@@ -75,7 +76,7 @@
 
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <div class="hero-text-block">
+            <div class="hero-text-block animate-fade-in">
                 <h1 data-i18n="hero_title">Transformamos la ciencia en soluciones prácticas para México y el mundo</h1>
                 <p class="subtitle" data-i18n="hero_subtitle">Investigación aplicada, capacitación especializada y
                     desarrollo biotecnológico para instituciones, investigadores y estudiantes.</p>
@@ -109,16 +110,16 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="section-padding about-section">
+    <section id="about" class="section-padding about-section reveal animate-slide-up">
         <div class="container">
-            <div class="section-header text-center">
+            <div class="section-header text-center reveal animate-slide-up">
                 <h2 data-i18n="about_title">Quiénes Somos</h2>
                 <p class="section-subtitle" data-i18n="about_subtitle">Cerrando la brecha entre el descubrimiento
                     científico y la aplicación en el mundo real.</p>
             </div>
 
             <div class="about-grid">
-                <div class="about-content">
+                <div class="about-content reveal animate-slide-up reveal-delay-1">
                     <h3 data-i18n="mission_title">Nuestra Misión y Visión</h3>
                     <p data-i18n="mission_text">Meta Scientia se dedica a avanzar en la biotecnología y la educación
                         científica. Empoderamos a investigadores, instituciones y estudiantes con herramientas y
@@ -126,23 +127,23 @@
                         ambiente.</p>
 
                     <div class="achievements-list">
-                        <div class="achievement-item">
+                        <div class="achievement-item reveal animate-slide-up reveal-delay-1">
                             <i class="fas fa-book-open"></i>
                             <span data-i18n="achieve_pubs">50+ Publicaciones</span>
                         </div>
-                        <div class="achievement-item">
+                        <div class="achievement-item reveal animate-slide-up reveal-delay-2">
                             <i class="fas fa-users"></i>
                             <span data-i18n="achieve_students">1000+ Estudiantes Capacitados</span>
                         </div>
-                        <div class="achievement-item">
+                        <div class="achievement-item reveal animate-slide-up reveal-delay-3">
                             <i class="fas fa-project-diagram"></i>
                             <span data-i18n="achieve_projects">20+ Proyectos Activos</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
+                <div class="about-image reveal animate-slide-up reveal-delay-2">
                     <div class="founder-card">
-                        <img src="./images/amir.jpg" alt="Founder of Meta Scientia" class="founder-img">
+                        <img src="./images/amir.jpeg" alt="Founder of Meta Scientia" class="founder-img">
                         <div class="founder-info">
                             <h4>Dr. Amir </h4>
                             <p data-i18n="founder_role">Fundador y científico Principal</p>
@@ -154,9 +155,9 @@
     </section>
 
     <!-- SERVICES SECTION -->
-    <section id="services" class="section-padding bg-light">
+    <section id="services" class="section-padding bg-light reveal animate-slide-up">
         <div class="container">
-            <div class="section-header text-center">
+            <div class="section-header text-center reveal animate-slide-up">
                 <h2 data-i18n="services_title">Nuestros Servicios</h2>
                 <p class="section-subtitle" data-i18n="services_subtitle">Soluciones integrales para la comunidad
                     científica.</p>
@@ -164,7 +165,7 @@
 
             <div class="services-grid">
                 <!-- Service 1 -->
-                <div class="service-card">
+                <div class="service-card reveal animate-slide-up reveal-delay-1">
                     <div class="service-icon"><i class="fas fa-seedling"></i></div>
                     <h3 data-i18n="service_1_title">Cultivo de tejidos vegetales</h3>
                     <p data-i18n="service_1_desc">Cultivo de tejidos y protocolos de mejoramiento genético para la
@@ -173,7 +174,7 @@
                             Más</span> <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <!-- Service 2 -->
-                <div class="service-card">
+                <div class="service-card reveal animate-slide-up reveal-delay-2">
                     <div class="service-icon"><span class="icon-mask icon-mushroom"></span></div>
                     <h3 data-i18n="service_2_title">Producción de hongos</h3>
                     <p data-i18n="service_2_desc">Capacitación y consultoría para el cultivo industrial y artesanal de
@@ -182,15 +183,16 @@
                         <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3 data-i18n="service_3_title">Desarrollo web</h3>
-                    <p data-i18n="service_3_desc">Desarrollo y estandarización de productos fitofarmacéuticos.</p>
-                    <a href="web-development.html" class="btn-link"><span data-i18n="learn_more">Aprender Más</span> <i
-                            class="fas fa-arrow-right"></i></a>
+                <div class="service-card reveal animate-slide-up reveal-delay-3">
+                    <div class="service-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3 data-i18n="service_6_title">Programas internacionales</h3>
+                    <p data-i18n="service_6_desc">Fomento de la colaboración global y programas de intercambio para
+                        investigadores.</p>
+                    <a href="international-programs.html" class="btn-link"><span data-i18n="learn_more">Aprender
+                            Más</span> <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <!-- Service 4 -->
-                <div class="service-card">
+                <div class="service-card reveal animate-slide-up reveal-delay-1">
                     <div class="service-icon"><i class="fas fa-dna"></i></div>
                     <h3 data-i18n="service_4_title">Bioinformática</h3>
                     <p data-i18n="service_4_desc">Análisis de datos y descubrimiento de fármacos utilizando biología
@@ -199,7 +201,7 @@
                             class="fas fa-arrow-right"></i></a>
                 </div>
                 <!-- Service 5 -->
-                <div class="service-card">
+                <div class="service-card reveal animate-slide-up reveal-delay-2">
                     <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
                     <h3 data-i18n="service_5_title">Escritos científicos / Publicaciones de investigación</h3>
                     <p data-i18n="service_5_desc">Asistencia en la preparación de manuscritos, edición y estrategia de
@@ -208,20 +210,21 @@
                         <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <!-- Service 6 -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-globe-americas"></i></div>
-                    <h3 data-i18n="service_6_title">Programas internacionales</h3>
-                    <p data-i18n="service_6_desc">Fomento de la colaboración global y programas de intercambio para
-                        investigadores.</p>
-                    <a href="international-programs.html" class="btn-link"><span data-i18n="learn_more">Aprender
-                            Más</span> <i class="fas fa-arrow-right"></i></a>
+
+                <div class="service-card reveal animate-slide-up reveal-delay-3">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3 data-i18n="service_3_title">Desarrollo web</h3>
+                    <p data-i18n="service_3_desc">Desarrollo y estandarización de productos fitofarmacéuticos.</p>
+                    <a href="web-development.html" class="btn-link"><span data-i18n="learn_more">Aprender Más</span> <i
+                            class="fas fa-arrow-right"></i></a>
+
                 </div>
             </div>
         </div>
     </section>
 
     <!-- PROJECTS & RESEARCH SECTION -->
-    <section id="projects" class="section-padding">
+    <section id="projects" class="section-padding reveal animate-slide-up">
         <div class="container">
             <div class="section-header text-center">
                 <h2 data-i18n="projects_title">Proyectos e Investigación</h2>
@@ -266,7 +269,7 @@
     </section>
 
     <!-- COURSES SECTION -->
-    <section id="courses" class="section-padding bg-light">
+    <section id="courses" class="section-padding bg-light reveal animate-slide-up">
         <div class="container">
             <div class="section-header text-center">
                 <h2 data-i18n="courses_title">Cursos y Talleres</h2>
@@ -336,7 +339,7 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="section-padding">
+    <section id="contact" class="section-padding reveal animate-slide-up">
         <div class="container">
             <div class="section-header text-center">
                 <h2 data-i18n="contact_title">Ponte en Contacto</h2>
@@ -453,6 +456,7 @@
         });
     </script>
 
+    <script src="animations.js"></script>
     <script src="script.js"></script>
 
 

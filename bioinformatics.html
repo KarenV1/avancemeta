@@ -18,6 +18,7 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="international.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
 
 <body>
@@ -52,7 +53,7 @@
     <!-- SERVICE HERO SECTION -->
     <section class="service-hero">
         <div class="container">
-            <div class="service-hero-content">
+            <div class="service-hero-content animate-fade-in">
                 <div class="service-icon-large">
                     <i class="fas fa-dna"></i>
                 </div>
@@ -67,7 +68,7 @@
     <section class="section-padding service-details">
         <div class="container">
             <div class="service-content-grid">
-                <div class="service-main-content">
+                <div class="service-main-content reveal animate-slide-up">
                     <h2 data-i18n="bio_about_title">Sobre este servicio</h2>
                     <p data-i18n="bio_about_text">En Meta Scientia, aprovechamos el poder de la bioinformática avanzada
                         y la biología computacional para acelerar la innovación científica, optimizar los resultados de
@@ -77,9 +78,9 @@
                         complejos, descubrir nuevos candidatos terapéuticos y tomar decisiones de investigación basadas
                         en datos.</p>
 
-                    <h3 data-i18n="bio_offer_title">¿Qué ofrecemos?</h3>
+                    <h3 data-i18n="bio_offer_title" class="reveal animate-slide-up">¿Qué ofrecemos?</h3>
                     <ul class="service-features-list">
-                        <li class="feature-item">
+                        <li class="feature-item reveal animate-slide-up reveal-delay-1">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
                                 <span data-i18n="bio_feat_1_title">Descubrimiento Computacional de Fármacos.</span>
@@ -99,7 +100,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="feature-item">
+                        <li class="feature-item reveal animate-slide-up reveal-delay-2">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
                                 <span data-i18n="bio_feat_2_title">Análisis de Datos Bioinformáticos.</span>
@@ -120,7 +121,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="feature-item">
+                        <li class="feature-item reveal animate-slide-up reveal-delay-3">
                             <div class="feature-header">
                                 <i class="fas fa-check-circle"></i>
                                 <span data-i18n="bio_feat_3_title">Desarrollo y Automatización de Flujos de Trabajo
@@ -131,7 +132,7 @@
                                     adaptadas a las necesidades de su proyecto:</p>
                                 <ul>
                                     <li data-i18n="bio_feat_3_li_1">Flujos de trabajo de procesamiento de datos
-                                        automatizados</li>
+                                        automáticos</li>
                                     <li data-i18n="bio_feat_3_li_2">Tuberías de cribado de alto rendimiento</li>
                                     <li data-i18n="bio_feat_3_li_3">Sistemas bioinformáticos reproducibles y escalables
                                     </li>
@@ -175,7 +176,7 @@
                 </div>
 
                 <!-- SIDEBAR -->
-                <aside class="service-sidebar">
+                <aside class="service-sidebar reveal animate-slide-up">
                     <div class="service-cta-box">
                         <h3 data-i18n="sidebar_interested_title">¿Interesado en este servicio?</h3>
                         <p data-i18n="sidebar_interested_text">Contáctanos para más información y cotizaciones
@@ -241,6 +242,7 @@
     </footer>
 
     <!-- SCRIPTS -->
+    <script src="animations.js"></script>
     <script src="script.js"></script>
 </body>
 
