@@ -9,31 +9,39 @@ document.addEventListener('DOMContentLoaded', function () {
     const totalItems = items.length;
 
     // Function to update classes based on current index
+    // Uses universal symmetric logic for any N
     function updateCarousel() {
         items.forEach((item, index) => {
-            // Calculate distance from current index
-            // We want to find the shortest distance in a circular array
+            // Calculate distance from current index in circular array
             let dist = (index - currentIndex + totalItems) % totalItems;
 
             // Remove all position classes
             item.className = 'intl-carousel-item';
 
             if (dist === 0) {
-                item.classList.add('position-0'); // Center
-            } else if (dist === 1) {
-                item.classList.add('position-1'); // Right 1
-            } else if (dist === 2) {
-                item.classList.add('position-2'); // Right 2
-            } else if (dist === 3) {
-                item.classList.add('position-3'); // Right 3 (Fade boundary)
-            } else if (dist === totalItems - 1) {
-                item.classList.add('position-7'); // Left 1
-            } else if (dist === totalItems - 2) {
-                item.classList.add('position-6'); // Left 2
-            } else if (dist === totalItems - 3) {
-                item.classList.add('position-5'); // Left 3 (Fade boundary)
+                item.classList.add('position-0'); // Center active
             } else {
-                item.classList.add('position-hidden'); // Hide everything else
+                // Determine shortest path to decide side
+                // If dist < totalItems / 2, proper to Right
+                // If dist > totalItems / 2, proper to Left
+
+                if (dist <= totalItems / 2) {
+                    // Right Side
+                    if (dist <= 3) {
+                        item.classList.add(`position-${dist}`);
+                    } else {
+                        item.classList.add('position-hidden');
+                    }
+                } else {
+                    // Left Side
+                    let leftDist = totalItems - dist;
+                    if (leftDist <= 3) {
+                        // Map: 1->7, 2->6, 3->5
+                        item.classList.add(`position-${8 - leftDist}`);
+                    } else {
+                        item.classList.add('position-hidden');
+                    }
+                }
             }
         });
     }
