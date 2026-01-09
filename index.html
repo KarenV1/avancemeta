@@ -42,11 +42,8 @@
     <!-- HEADER / NAVIGATION -->
     <header id="main-header">
         <div class="container header-container">
-            <!-- Logo hidden in navbar via CSS -->
-            <a href="#" class="logo-container">
-                <img src="./images/logo.png" alt="Meta Scientia Logo" class="logo-img">
-                <span class="logo-text">MetaScientia</span>
-            </a>
+            <!-- Logo removed from navbar -->
+
 
             <nav id="main-nav">
                 <ul class="nav-links">
@@ -76,8 +73,11 @@
 
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <!-- Central Logo Focus -->
-            <img src="./images/logo.png" alt="Meta Scientia" class="hero-logo-large">
+            <!-- Central Logo Focus with Subtle Branding Box -->
+            <div class="hero-branding-box">
+                <img src="./images/logo.png" alt="Meta Scientia" class="hero-logo-large">
+                <p class="hero-tagline-formal">Translating Science into Solutions</p>
+            </div>
 
             <div class="hero-text-block animate-fade-in">
                 <h1 data-i18n="hero_title">We transform science into practical solutions for Mexico and the world</h1>
@@ -124,28 +124,28 @@
     <section id="about" class="about-section-redesign">
         <div class="about-layout-container">
             <!-- Left Column: Image with Overlay -->
-            <div class="about-image-column">
+            <div class="about-image-column reveal animate-slide-left">
                 <div class="about-image-overlay"></div>
             </div>
 
             <!-- Right Column: Text Content -->
             <div class="about-content-column">
                 <!-- Split Title Effect -->
-                <h2 class="about-split-title">
-                    <span class="title-white">QUI</span><span class="title-black">ÉNES SOMOS</span>
+                <h2 class="about-split-title reveal animate-slide-right">
+                    <span class="title-white" data-i18n="about_split_1">QUI</span><span class="title-black"
+                        data-i18n="about_split_2">ÉNES SOMOS</span>
                 </h2>
 
-                <h4 class="about-subtitle-new" data-i18n="about_intro">Meta Scientia, Empresa de Investigación e
+                <h4 class="about-subtitle-new reveal animate-slide-right reveal-delay-2" data-i18n="about_intro">Meta
+                    Scientia, Empresa de Investigación e
                     Innovación.</h4>
 
-                <div class="about-text-content">
+                <div class="about-text-content reveal animate-slide-right reveal-delay-3">
                     <p data-i18n="about_description">
-                        Meta Scientia es una innovadora empresa de investigación y desarrollo dedicada a expandir la
-                        capacidad científica, desarrollar sistemas de laboratorio avanzados y ofrecer soluciones
-                        biotecnológicas. Nos especializamos en cultivo de tejidos vegetales, producción de hongos,
-                        desarrollo de productos herbales, acoplamiento molecular, bioinformática y apoyo a publicaciones
-                        con orientación en investigación. Mediante la colaboración y el desarrollo de habilidades, Meta
-                        Scientia transforma ideas científicas en resultados prácticos e impactantes.
+                        Meta Scientia es una empresa dedicada al desarrollo de páginas web enfocadas en ciencias
+                        biológicas, biotecnología y enfoques de investigación científica en biotecnología. Mediante la
+                        colaboración y el desarrollo de habilidades, Meta Scientia transforma ideas científicas en
+                        resultados prácticos e impactantes.
                     </p>
 
                     <p data-i18n="about_legal" class="about-legal-text">
@@ -197,10 +197,10 @@
             <div class="founder-section-container">
                 <div class="founder-strip">
                     <div class="founder-content-wrapper">
-                        <div class="founder-img-overlap">
+                        <div class="founder-img-overlap reveal animate-slide-left">
                             <img src="./images/amir.jpeg" alt="Dr. Amir Ali" class="founder-photo-strip">
                         </div>
-                        <div class="founder-text-block">
+                        <div class="founder-text-block reveal animate-slide-right">
                             <h3 class="founder-name-strip">Dr. Amir Ali</h3>
                             <p class="founder-role-strip" data-i18n="founder_role">Fundador y Científico Principal</p>
                             <div class="founder-bio-strip">
@@ -283,7 +283,8 @@
                 <div class="service-card reveal animate-slide-up reveal-delay-3">
                     <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
                     <h3 data-i18n="service_3_title">Desarrollo web</h3>
-                    <p data-i18n="service_3_desc">Desarrollo y estandarización de productos fitofarmacéuticos.</p>
+                    <p data-i18n="service_3_desc">Diseño y desarrollo de sitios web especializados en ciencias
+                        biológicas y biotecnología.</p>
                     <a href="web-development.html" class="btn-link"><span data-i18n="learn_more">Aprender Más</span> <i
                             class="fas fa-arrow-right"></i></a>
 
@@ -303,35 +304,25 @@
             <div class="projects-slider-container">
                 <div class="slider-wrapper" id="projects-slider">
                     <div class="slide active">
-                        <video autoplay loop muted playsinline class="slide-video">
+                        <video autoplay muted playsinline class="slide-video">
                             <source src="images/video1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <div class="slide-caption">
-                            <h3 data-i18n="slide_1_title">Análisis Genético Avanzado</h3>
-                            <p data-i18n="slide_1_desc">Mapeo de genomas para cultivos resistentes a la sequía.</p>
-                        </div>
+
                     </div>
                     <div class="slide">
-                        <video autoplay loop muted playsinline class="slide-video">
+                        <video autoplay muted playsinline class="slide-video">
                             <source src="images/video2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <div class="slide-caption">
-                            <h3 data-i18n="slide_2_title">Agricultura Sustentable</h3>
-                            <p data-i18n="slide_2_desc">Implementación de biofertilizantes.</p>
-                        </div>
+
                     </div>
                     <div class="slide">
-                        <video autoplay loop muted playsinline class="slide-video">
+                        <video autoplay muted playsinline class="slide-video">
                             <source src="images/video3.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <div class="slide-caption">
-                            <h3 data-i18n="slide_3_title">Colaboración Internacional</h3>
-                            <p data-i18n="slide_3_desc">Presentación de hallazgos en cumbres globales de biotecnología.
-                            </p>
-                        </div>
+
                     </div>
                 </div>
                 <button class="slider-btn prev-btn" aria-label="Previous Slide"><i
@@ -472,13 +463,9 @@
     <footer class="main-footer">
         <div class="container footer-grid">
             <div class="footer-col">
+                <img src="./images/logo.png" alt="MetaScientia Logo" class="footer-logo">
                 <h3>MetaScientia</h3>
                 <p data-i18n="footer_slogan">Transformando la ciencia en soluciones.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
             </div>
             <div class="footer-col">
                 <h4 data-i18n="footer_quicklinks">Enlaces Rápidos</h4>
@@ -495,13 +482,6 @@
                     <li><a href="#" data-i18n="footer_privacy">Política de Privacidad</a></li>
                     <li><a href="#" data-i18n="footer_terms">Términos de Servicio</a></li>
                 </ul>
-            </div>
-            <div class="footer-col">
-                <h4 data-i18n="footer_newsletter">Boletín</h4>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Tu correo" data-i18n="placeholder_email">
-                    <button type="submit" class="btn btn-sm btn-primary" data-i18n="btn_subscribe">Suscribirse</button>
-                </form>
             </div>
         </div>
         <div class="footer-bottom text-center">

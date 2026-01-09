@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const observerOptions = {
             root: null,
-            rootMargin: '0px',
-            threshold: 0.01
+            rootMargin: '-10% 0px -10% 0px', // More lenient margin
+            threshold: 0.1 // Lower threshold for reliability
         };
 
         const observer = new IntersectionObserver((entries, observer) => {
@@ -28,9 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         revealElements.forEach(el => {
             observer.observe(el);
-            // Immediate check for elements already in view
+            // Immediate check for elements already in view (matching 10% margin)
             const rect = el.getBoundingClientRect();
-            if (rect.top < window.innerHeight && rect.bottom > 0) {
+            const viewBuffer = window.innerHeight * 0.1; // 10% buffer
+            if (rect.top < window.innerHeight - viewBuffer && rect.bottom > viewBuffer) {
                 el.classList.add('active');
             }
         });

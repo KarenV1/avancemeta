@@ -26,8 +26,12 @@
     /* Mapping old var to new palette */
     --primary-green: var(--accent-green);
     --text-dark: var(--text-black);
-    --text-light: var(--primary-medium);
+    --text-light: #1A1A1A;
+    /* Black for maximum visibility */
     --white: #FFFFFF;
+
+    /* Shared Service Page Tokens */
+    --service-hero-gradient: linear-gradient(180deg, #1B3A2A 0%, #11261C 100%);
 
     /* Backgrounds */
     --bg-body-start: #E8ECEF;
@@ -90,6 +94,7 @@ h6 {
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--primary-dark);
+    line-height: 1.3;
 }
 
 a {
@@ -344,8 +349,41 @@ img {
     justify-content: center;
 }
 
+.hero-branding-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    /* Slight increase in margin to separate from title */
+    position: relative;
+    z-index: 10;
+    pointer-events: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    /* Tighter box */
+}
+
+.hero-branding-box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110%;
+    height: 110%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0) 75%);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(8px);
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.8);
+    /* Much smaller, tighter glow */
+}
+
 .hero-logo-large {
-    width: clamp(150px, 30vw, 200px);
+    width: clamp(180px, 40vw, 250px);
     display: block;
     position: relative;
     margin-bottom: 30px;
@@ -363,6 +401,31 @@ img {
     100% {
         opacity: 1;
         transform: translateY(0) scale(1);
+    }
+}
+
+.hero-tagline-formal {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--white);
+    margin-top: -10px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeInTagline 1s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeInTagline {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -1034,15 +1097,24 @@ img {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
     margin-bottom: 40px;
+    justify-items: center;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .footer-col h3,
 .footer-col h4 {
     color: var(--white);
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .footer-col ul li {
@@ -1051,6 +1123,15 @@ img {
 
 .footer-col ul li a:hover {
     color: var(--accent-green);
+}
+
+.footer-logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    filter: brightness(0) invert(1);
+    /* Make it white to match theme if needed, or keeping original depending on asset */
 }
 
 .social-links {
@@ -1262,7 +1343,7 @@ img {
     }
 
     .logo {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .header-actions {
@@ -1381,7 +1462,7 @@ img {
 
 .founder-img-overlap {
     width: 200px;
-    height: 200px;
+    height: 260px;
     margin-left: -60px;
     /* Pull it out of the container to the left */
     margin-right: 30px;
@@ -1396,8 +1477,7 @@ img {
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    border: 3px solid #ffffff;
-    /* Optional white border for pop */
+    border: none;
 }
 
 .founder-text-block {
@@ -1616,7 +1696,7 @@ img {
 
 /* Text Content */
 .about-text-content {
-    color: #333333;
+    color: #1A1A1A;
 }
 
 .about-text-content p {
@@ -1628,7 +1708,7 @@ img {
 
 .about-legal-text {
     font-size: 0.9rem;
-    color: #666666;
+    color: #1A1A1A;
     font-style: italic;
     padding: 15px;
     background: #f8f9fa;
@@ -1639,12 +1719,23 @@ img {
 /* IMPI Logo */
 .impi-logo-container {
     margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .impi-logo {
-    width: 120px;
+    width: 180px;
+    /* Slightly larger */
     height: auto;
-    opacity: 0.8;
+    opacity: 1;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+    transition: var(--transition);
+}
+
+.impi-logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.15));
 }
 
 /* Vision & Mission Section */
@@ -1841,5 +1932,10 @@ img {
 
     .tagline-text {
         font-size: 1rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
