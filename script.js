@@ -40,13 +40,24 @@ document.addEventListener('DOMContentLoaded', () => {
             card_training: "Capacitación Especializada",
             card_sustainable: "Soluciones Sustentables",
             about_title: "Quiénes Somos",
-            about_subtitle: "Cerrando la brecha entre el descubrimiento científico y la aplicación en el mundo real.",
+            about_intro: "Meta Scientia, Empresa de Investigación e Innovación.",
+            about_description: "Meta Scientia es una innovadora empresa de investigación y desarrollo dedicada a expandir la capacidad científica, desarrollar sistemas de laboratorio avanzados y ofrecer soluciones biotecnológicas. Nos especializamos en cultivo de tejidos vegetales, producción de hongos, desarrollo de productos herbales, acoplamiento molecular, bioinformática y apoyo a publicaciones con orientación en investigación. Mediante la colaboración y el desarrollo de habilidades, Meta Scientia transforma ideas científicas en resultados prácticos e impactantes.",
+            about_legal: "La empresa está registrada oficialmente ante el Instituto Mexicano de la Propiedad Industrial (IMPI) con el número de registro 2945214, Clase 42, y abarca servicios científicos y tecnológicos; servicios de investigación y diseño; análisis e investigación industrial; diseño industrial; servicios de control de calidad y autenticación; y diseño y desarrollo de hardware y software.",
+            about_extra_title: "Acerca de Meta Scientia",
+            about_extra_text_1: "Meta Scientia, empresa de investigación e innovación, es una organización científica con sede en México, comprometida con el avance de la biotecnología, el desarrollo de productos naturales y la formación científica.",
+            about_extra_text_2: "Apoyamos a investigadores, instituciones e industrias en el desarrollo de prácticas científicas y de innovación sostenibles.",
+            about_vision_title: "Nuestra Visión",
+            about_vision_text: "Constituir Meta Scientia como una plataforma líder en investigación e innovación en México, impulsando las ciencias de la vida y la biotecnología mediante la gestión de la investigación, la colaboración interdisciplinaria y la transformación de los descubrimientos científicos en soluciones prácticas e impactantes.",
+            about_mission_title: "Nuestra Misión",
+            about_mission_text: "Nuestra misión es empoderar a investigadores, estudiantes e instituciones mediante la capacitación avanzada y soluciones basadas en la investigación. Mejoramos la calidad, la visibilidad y el impacto del trabajo científico fortaleciendo las habilidades de investigación, impulsando la innovación y apoyando el desarrollo y la comercialización de productos científicos y biotecnológicos.",
             mission_title: "Nuestra Misión y Visión",
             mission_text: "Meta Scientia se dedica a avanzar en la biotecnología y la educación científica. Empoderamos a investigadores, instituciones y estudiantes con herramientas y conocimientos de vanguardia para resolver desafíos urgentes en agricultura, salud y medio ambiente.",
             achieve_pubs: "50+ Publicaciones",
             achieve_students: "1000+ Estudiantes Capacitados",
             achieve_projects: "20+ Proyectos Activos",
             founder_role: "Fundador y Científico Principal",
+            founder_degrees: "PhD en Botánica (PMAS Arid Agriculture University, Rawalpindi, Pakistán)<br>PhD en Nanociencia y Nanotecnología (Cinvestav, IPN, Ciudad de México, México)",
+            founder_bio: "El Dr. Amir Ali fundó Meta Scientia para empoderar a futuros innovadores e investigadores.",
             services_title: "Nuestros Servicios",
             services_subtitle: "Soluciones integrales para la comunidad científica.",
             service_1_title: "Biotecnología Vegetal",
@@ -239,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ptc_feat_2_desc: "Optimización del crecimiento vegetal y acumulación de metabolitos mediante técnicas avanzadas de cultivo de tejidos y sistemas rentables.",
             ptc_feat_3_title: "RENTABILIDAD",
             ptc_feat_3_desc: "Producción escalable de compuestos bioactivos de alto valor, que impulsa las formulaciones comerciales y la innovación industrial.",
-            ptc_feat_4_title: "PROTOCOLO DE PRODUCTOS",
+            ptc_feat_4_title: "Protocolo de productos",
             ptc_feat_4_desc: "Caralluma, Stevia, Papa, Silybum marianum, Plátano, Fresa, Oliva, etc.",
             ptc_meta_title: "Acerca de Meta Scientia",
             ptc_meta_text_1: "Un enfoque clave de Meta Scientia es el cultivo de tejidos vegetales, brindando soluciones avanzadas para la producción a gran escala de plantas de alto valor y sus metabolitos bioactivos. Mediante tecnologías in vitro de vanguardia, como la micropropagación, cultivos de callos y suspensiones celulares, y estrategias de mejora de metabolitos, apoyamos a las industrias farmacéutica, nutracéutica y cosmética con compuestos vegetales confiables, libres de contaminantes y estandarizados.",
@@ -414,13 +425,24 @@ document.addEventListener('DOMContentLoaded', () => {
             card_training: "Specialized Training",
             card_sustainable: "Sustainable Solutions",
             about_title: "Who We Are",
-            about_subtitle: "Bridging the gap between scientific discovery and real-world application.",
+            about_intro: "Meta Scientia, Research and Innovation Company.",
+            about_description: "Meta Scientia is an innovative research and development company dedicated to expanding scientific capacity, developing advanced laboratory systems, and providing biotechnological solutions. We specialize in plant tissue culture, mushroom production, herbal product development, molecular docking, bioinformatics, and research-oriented publication support. Through collaboration and skills development, Meta Scientia transforms scientific ideas into practical and impactful results.",
+            about_legal: "The company is officially registered with the Mexican Institute of Industrial Property (IMPI) under registration number 2945214, Class 42, covering scientific and technological services; research and design services; industrial analysis and research; industrial design; quality control and authentication services; and hardware and software design and development.",
+            about_extra_title: "About Meta Scientia",
+            about_extra_text_1: "Meta Scientia, a research and innovation company, is a scientific organization based in Mexico, committed to the advancement of biotechnology, natural product development, and scientific training.",
+            about_extra_text_2: "We support researchers, institutions, and industries in the development of sustainable scientific and innovation practices.",
+            about_vision_title: "Our Vision",
+            about_vision_text: "To establish Meta Scientia as a leading research and innovation platform in Mexico, driving life sciences and biotechnology through research management, interdisciplinary collaboration, and the transformation of scientific discoveries into practical and impactful solutions.",
+            about_mission_title: "Our Mission",
+            about_mission_text: "Our mission is to empower researchers, students, and institutions through advanced training and research-based solutions. We improve the quality, visibility, and impact of scientific work by strengthening research skills, driving innovation, and supporting the development and commercialization of scientific and biotechnological products.",
             mission_title: "Our Mission & Vision",
             mission_text: "Meta Scientia is dedicated to advancing biotechnology and scientific education. We empower researchers, institutions, and students with cutting-edge tools and knowledge to solve pressing challenges in agriculture, health, and the environment.",
             achieve_pubs: "50+ Publications",
             achieve_students: "1000+ Students Trained",
             achieve_projects: "20+ Active Projects",
             founder_role: "Founder & Lead Scientist",
+            founder_degrees: "PhD in Botany (PMAS Arid Agriculture University, Rawalpindi, Pakistan)<br>PhD in Nanoscience & Nanotechnology (Cinvestav, IPN, Mexico City, Mexico)",
+            founder_bio: "Dr. Amir Ali founded Meta Scientia to empower future innovators and researchers.",
             services_title: "Our Services",
             services_subtitle: "Comprehensive solutions for the scientific community.",
             service_1_title: "Plant Tissue Culture",
@@ -449,18 +471,18 @@ document.addEventListener('DOMContentLoaded', () => {
             course_1_badge: "Online",
             course_1_title: "PCR & Molecular Biology",
             duration_label_1: "Duration:",
-            duration_label_11: "4 weeks",
+            duration_label_11: " 4 weeks",
             course_1_desc: "Master the fundamentals of Polymerase Chain Reaction.",
             enroll_btn: "Enroll Now",
             course_2_badge: "Hybrid",
             course_2_title: "Scientific Writing Masterclass",
-            duration_label_2: "Duration: ",
-            duration_label_21: "2 weeks",
+            duration_label_2: "Duration:",
+            duration_label_21: " 2 weeks",
             course_2_desc: "Learn to write high-impact research papers.",
             course_3_badge: "In-Person",
             course_3_title: "Mushroom Cultivation",
-            duration_label_3: "Duration: ",
-            duration_label_31: "3 days",
+            duration_label_3: "Duration:",
+            duration_label_31: " 3 days",
             course_3_desc: "Hands-on workshop for growing edible fungi.",
             testimonials_title: "What Our Students Say",
             testimonial_1: "\"The PCR course was a game-changer for my thesis work. Highly recommended!\"",
@@ -613,7 +635,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ptc_feat_2_desc: "Optimization of plant growth and metabolite accumulation through advanced tissue culture techniques and cost-effective systems.",
             ptc_feat_3_title: "PROFITABILITY",
             ptc_feat_3_desc: "Scalable production of high-value bioactive compounds, driving commercial formulations and industrial innovation.",
-            ptc_feat_4_title: "PRODUCT PROTOCOL",
+            ptc_feat_4_title: "Product Protocol",
             ptc_feat_4_desc: "Caralluma, Stevia, Potato, Silybum marianum, Banana, Strawberry, Olive, etc.",
             ptc_meta_title: "About Meta Scientia",
             ptc_meta_text_1: "A key focus of Meta Scientia is plant tissue culture, providing advanced solutions for the large-scale production of high-value plants and their bioactive metabolites. Through cutting-edge in vitro technologies such as micropropagation, callus cultures, and cell suspensions, and metabolite enhancement strategies, we support the pharmaceutical, nutraceutical, and cosmetic industries with reliable, contaminant-free, and standardized plant compounds.",
@@ -785,7 +807,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (el.tagName === 'INPUT' && el.getAttribute('placeholder')) {
                     el.placeholder = translations[lang][key];
                 } else {
-                    el.textContent = translations[lang][key];
+                    el.innerHTML = translations[lang][key];
                 }
             }
         });
@@ -856,7 +878,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Autoplay
     function startTimer() {
         if (totalSlides > 0) {
-            slideInterval = setInterval(nextSlide, 5000); // 5 seconds
+            // Prevent multiple intervals
+            if (slideInterval) clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 2000); // 2 seconds
         }
     }
 
@@ -971,19 +995,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    VANTA.CELLS({
-        el: "#hero",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        color1: 0x8c8c,
-        color2: 0xf2e735,
-        size: 1.5,
-        speed: 1
-    })
+
 
 });
 

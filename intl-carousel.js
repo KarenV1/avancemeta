@@ -8,6 +8,22 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentIndex = 0;
     const totalItems = items.length;
 
+    // Detect Orientation for styling (Uniform Verticals vs Full Horizontals)
+    items.forEach(item => {
+        const img = item.querySelector('img');
+        if (img) {
+            const check = () => {
+                if (img.naturalHeight >= img.naturalWidth) {
+                    img.classList.add('img-portrait');
+                } else {
+                    img.classList.add('img-landscape');
+                }
+            };
+            if (img.complete) check();
+            else img.onload = check;
+        }
+    });
+
     // Function to update classes based on current index
     // Uses universal symmetric logic for any N
     function updateCarousel() {
@@ -64,6 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function startTimer() {
+        // Clear existing timer to prevent duplicates
+        if (autoPlayTimer) clearInterval(autoPlayTimer);
         // 3 seconds interval for smooth reading
         autoPlayTimer = setInterval(next, 3000);
     }
